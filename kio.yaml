@@ -7,6 +7,8 @@ displayNames:
 
 locale: kio
 
+supportedTargets: [ios, android]
+
 modes:
 # mobile layouts:
   mobile-default: |
