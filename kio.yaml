@@ -2,7 +2,7 @@
 internalName: kio_keyboards
 
 displayNames:
-  kio: Kiowa
+  kio: Cáuijògà
   en: Kiowa
 
 locale: kio
@@ -12,25 +12,34 @@ supportedTargets: [ios, android]
 modes:
 # mobile layouts:
   mobile-default: |
-    á š e r t y u i o p ŋ
-    a s d f g h j k l đ ŧ
-    ž z č c v b n m w
+    q w e r t y u i o p
+    a s d f g : j k l
+    z x c v b n m w
   mobile-shift: |
-    Á Š E R T Y U I O P Ŋ
-    A S D F G H J K L Đ Ŧ
-    Ž Z Č C V B N M W
+    Q W E R T Y U I O P
+    A S D F G H J K L 
+    Z X C V B N M W
 
 
 # mobile keyboards properties:
 longpress:
-  Á: Q
-  A: Æ Ä Å
-  Č: X
-  O: Ø Ö
-  á: q
-  a: æ ä å
-  č: x
-  o: ø ö
+  A: Á Á̱ Ā́ Ā̱́ À À̱ Ā̀ Ā̱̀ Â Â̱
+  B: Ƀ
+  D: Ð
+  E: É É̱ Ḗ Ḗ̱ È È̱ Ḕ Ḕ̱ Ê Ê̱
+  G: Ǥ
+  I: Í Í̱ Ī́ Ī̱́ Ì Ì̱ Ī̀ Ī̱̀ Î Î̱
+  O: Ó Ó̱ Ṓ Ṓ̱ Ò Ò̱ Ṑ Ṑ̱ Ô Ô̱
+  U: Ú Ú̱ Ū́ Ū̱́ Ù Ù̱ Ū̀ Ū̱̀ Û Û̱
+  a: á á̱ ā́ ā̱́ à à̱ ā̀ ā̱̀ â â̱
+  b: ƀ
+  d: đ
+  e: é é̱ ḗ ḗ̱ è è̱ ḕ ḕ̱ ê ê̱
+  g: ǥ
+  i: í í̱ ī́ ī̱́ ì ì̱ ī̀ ī̱̀ î î̱
+  o: ó ó̱ ṓ ṓ̱ ò ò̱ ṑ ṑ̱ ô ô̱
+  u: ú ú̱ ū́ ū̱́ ù ù̱ ū̀ ū̱̀ û û̱
+  ':': h
 
 styles:
   tablet:
@@ -44,5 +53,5 @@ styles:
       backspace: [3, right, fill]
 
 strings:
-  space: gaska
-  return: linnjámolsun
+  space: space
+  return: return
