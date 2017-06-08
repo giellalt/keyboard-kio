@@ -6,7 +6,9 @@ displayNames:
   kio: Cáuijògà
   en: Kiowa
 
-locale: en
+locale: kio
+
+supportedTargets: [osx, x11, svg]
 
 modes:
   # default
