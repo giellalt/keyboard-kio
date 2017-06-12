@@ -60,13 +60,9 @@ modes:
     ¯ ß ð ƒ © ˍ ˝ ˚ - … æ «
     § ’ . ¸ ˇ ˘ ˜ ˛ ≤ ≥ ÷
 
-deadKeys:
-  iso-alt: ['´', '`', '^', '˝', '¨' ] #, '-']  
-  iso-alt-shift: [' ́', ' ̀', ' ̂', ' ̋', ' ̈']
-# iso-alt:       D03, E00, E06, C07, D07, C09
-# iso-alt-shift: D03, E00, E06, C07, D07
-  
-# Philosophy: 
+
+# Philosophy behind the deadkey assignment: 
+
 # Five alt deadkeys, for acute, grave, circ, acutemacron, gravmacron
 # The same alt-shift deadkeys for the same letters, with line below
 
@@ -86,6 +82,15 @@ deadKeys:
 # C07   ˝      ̋
 # C08   ¨      ̈
 
+
+
+
+deadKeys:
+  iso-alt: ['´', '`', '^', '˝', '¨', '-']
+  iso-alt+shift: [' ́', ' ̀', ' ̂', ' ̋', ' ̈' ]
+# iso-alt:       D03, E00, E06, C07, D07, C09
+# iso-alt+shift: D03, E00, E06, C07, D07
+  
   
 transforms:
   "´":
@@ -113,7 +118,7 @@ transforms:
     i: í̱ 
     o: ó̱ 
     u: ú̱ 
-  
+
   "`":
     " ": "`" # iso-alt E00
     A: À 
@@ -207,7 +212,20 @@ transforms:
     o: ṑ
     u: ū̀
 
-"-":
+  " ̈":
+    " ": " ̈" # iso-alt-shift D07
+    A: Ā̱̀
+    E: Ḕ̱
+    I: Ī̱̀
+    O: Ṑ̱
+    U: Ū̱̀
+    a: ā̱̀
+    e: ḕ̱
+    i: ī̱̀
+    o: ṑ̱
+    u: ū̱̀
+
+  "-":
     " ": "-" # iso-alt C09
     A: A̱
     E: E̱
@@ -219,19 +237,6 @@ transforms:
     i: i̱
     o: o̱
     u: u̱
-
-#   ̈:
-#    " ":  ̈ # iso-alt-shift D07
-#    A: Ā̱̀
-#    E: Ḕ̱
-#    I: Ī̱̀
-#    O: Ṑ̱
-#    U: Ū̱̀
-#    a: ā̱̀
-#    e: ḕ̱
-#    i: ī̱̀
-#    o: ṑ̱
-#    u: ū̱̀
 
 
 
