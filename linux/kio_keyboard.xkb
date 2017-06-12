@@ -10,7 +10,7 @@ xkb_symbols "basic" {
     key <AE03> { [          3, numbersign,   sterling,      U2039 ] };
     key <AE04> { [          4,     dollar,       cent,      U203A ] };
     key <AE05> { [          5,    percent,    section,     dagger ] };
-    key <AE06> { [          6, asciicircum,      U02C6,      U0302 ] };
+    key <AE06> { [          6, asciicircum, asciicircum,      U0302 ] };
     key <AE07> { [          7,  ampersand,  paragraph, doubledagger ] };
     key <AE08> { [          8,   asterisk, enfilledcircbullet,     degree ] };
     key <AE09> { [          9,  parenleft, ordfeminine, periodcentered ] };
@@ -34,8 +34,8 @@ xkb_symbols "basic" {
     key <AC03> { [          d,          D,    dstroke,        ETH ] };
     key <AC04> { [          f,          F,   function,     UF0002 ] };
     key <AC05> { [          g,          G,      U01E5,      U01E4 ] };
-    key <AC06> { [      colon,          H,          h,      U0331 ] };
-    key <AC07> { [          j,          J, doubleacute,      U030B ] };
+    key <AC06> { [          h,          H,      U02D0,      U030B ] };
+    key <AC07> { [          j,          J, doubleacute,      U0308 ] };
     key <AC08> { [          k,          K,      U02DA,      U030A ] };
     key <AC09> { [          l,          L,      minus,      U0335 ] };
     key <AC10> { [  semicolon,      colon,   ellipsis, numerosign ] };

@@ -31,16 +31,17 @@ modes:
     § Z X C V B N M , . /
   # opt
   iso-alt: |
-    ` ¡ ™ £ ¢ § ˆ ¶ • ª º – ≠
+    ` ¡ ™ £ ¢ § ^ ¶ • ª º – ≠
       œ ˙ ´ ® þ ¥ ¨ ʼ ø , “ ‘
       ¯ ß đ ƒ ǥ ː ˝ ˚ - … æ «
     § ˀ . ¸ ˇ ƀ ˜ ˛ ≤ ≥ ÷
   # opt+shift+cmd?+caps?
+#  00        01      02            03      04            05        06            7      008      09     10      11 12
   iso-alt+shift: |
-    \u{300}  ⁄       €             ‹       ›             †                ̂       ‡       °       ·       ‚ — ±
-             \u{307}  ́             ‰       Þ             \u{A0}\u{30F}   \u{308} \u{31B} Ø       \u{326} ” ’ Å
-             \u{304} \u{A0}\u{311} Ð       \u{A0}\u{330} Ǥ                ̋        ̈       \u{30A} \u{335} № Æ »
-    ±        \u{309} \u{323}       \u{327} \u{30C}       Ƀ \u{303}       \u{328} „       ʔ       ¿
+    \u{300}  ⁄       €             ‹       ›             †          ̂             ‡       °       ·       ‚       — ±
+             Œ       \u{307}        ́       ‰             Þ         \u{A0}\u{30F} \u{308} \u{31B} Ø       \u{326} ” ’
+             \u{304} \u{A0}\u{311} Ð       \u{A0}\u{330} Ǥ          ̋              ̈       \u{30A} \u{335} №       Æ »
+    ±        \u{309} \u{323}       \u{327} \u{30C}       Ƀ \u{303} \u{328}       „       ʔ       ¿
   # opt+caps
   iso-caps+alt: |
     ` ¡ ™  £ ¢ § ˆ ¶ • ª º – ≠
@@ -66,13 +67,13 @@ modes:
 # Five alt deadkeys, for acute, grave, circ, acutemacron, gravmacron
 # The same alt-shift deadkeys for the same letters, with line below
 
-# A Á À Â 
+# A Á À Â ok: 
 #   
-# A̱ Á̱ À̱ Â̱
+# A̱ Á̱ À̱ Â̱  combined line below
 #   
-#   Ā́ Ā̀
+#   Ā́ Ā̀ ok
 #  
-#   Ā̱́ Ā̱̀
+#   Ā̱́ Ā̱̀  combined line below
 #  
 # Deadkeys: (where alt-shift adds line below)
 #      alt alt-shift
@@ -83,14 +84,22 @@ modes:
 # C08   ¨      ̈
 
 
-
-
 deadKeys:
-  iso-alt: ['´', '`', '^', '˝', '¨', '-']
-  iso-alt+shift: [' ́', '\u{300}', ' ̂', ' ̋', ' ̈' ]
-# iso-alt:       D03, E00, E06, C07, D07, C09
-# iso-alt+shift: D03, E00, E06, C07, D07
-  
+  iso-alt: ['´', '`', '^', '®', 'ø'] # D03, B00, D08, D04, D09
+
+# alt + ...
+# akutt = e = D03 ) Acute on US
+# grav = ` = B00 <=== grave on US
+# sirk = i = D08 Circumflex on US
+# makronakutt = r = D04 One to the right of Acute
+# makrongrav = o = D09 One to the right of grave
+# dvt.
+# macronakutt = e = D03
+# macrongrav = ` = B00 <=== ǥ
+
+# underline = l ) line under
+
+
   
 transforms:
   "´":
@@ -106,21 +115,8 @@ transforms:
     o: ó 
     u: ú 
   
-  " ́":
-    " ": " ́" # iso-alt-shift D03
-    A: Á̱ 
-    E: É̱ 
-    I: Í̱ 
-    O: Ó̱ 
-    U: Ú̱ 
-    a: á̱ 
-    e: é̱ 
-    i: í̱ 
-    o: ó̱ 
-    u: ú̱ 
-
   "`":
-    " ": "`" # iso-alt E00
+    " ": "`" # iso-alt B00
     A: À 
     E: È 
     I: Ì 
@@ -131,19 +127,6 @@ transforms:
     i: ì 
     o: ò 
     u: ù 
-
-  \u{300}:
-    " ": "`" # iso-alt-shift E00
-    A: À̱ 
-    E: È̱ 
-    I: Ì̱ 
-    O: Ò̱ 
-    U: Ù̱ 
-    a: à̱ 
-    e: è̱ 
-    i: ì̱ 
-    o: ò̱ 
-    u: ù̱ 
 
   
   "^":
@@ -159,21 +142,8 @@ transforms:
     o: ô 
     u: û 
 
-  " ̂":
-    " ": " ̂" # iso-alt-shift E06
-    A: Â̱
-    E: Ê̱
-    I: Î̱
-    O: Ô̱
-    U: Û̱
-    a: â̱
-    e: ê̱
-    i: î̱
-    o: ô̱
-    u: û̱
-  
-  "˝":
-    " ": "˝" # iso-alt C07
+  "®":
+    " ": "®" # iso-alt C07
     A: Ā́
     E: Ḗ
     I: Ī́
@@ -185,22 +155,9 @@ transforms:
     o: ṓ
     u: ū́
 
-  " ̋":
-    " ": " ̋" # iso-alt-shift C07
-    A: Ā̱́
-    E: Ḗ̱
-    I: Ī̱́
-    O: Ṓ̱
-    U: Ū̱́
-    a: ā̱́
-    e: ḗ̱
-    i: ī̱́
-    o: ṓ̱
-    u: ū̱́
 
-
-  "¨":
-    " ": "¨" # iso-alt D07
+  "ø":
+    " ": "ø" # iso-alt D07
     A: Ā̀
     E: Ḕ
     I: Ī̀
@@ -212,31 +169,88 @@ transforms:
     o: ṑ
     u: ū̀
 
-  " ̈":
-    " ": " ̈" # iso-alt-shift D07
-    A: Ā̱̀
-    E: Ḕ̱
-    I: Ī̱̀
-    O: Ṑ̱
-    U: Ū̱̀
-    a: ā̱̀
-    e: ḕ̱
-    i: ī̱̀
-    o: ṑ̱
-    u: ū̱̀
 
-  "-":
-    " ": "-" # iso-alt C09
-    A: A̱
-    E: E̱
-    I: I̱
-    O: O̱
-    U: U̱
-    a: a̱
-    e: e̱
-    i: i̱
-    o: o̱
-    u: u̱
+
+#  "-":
+#    " ": "-" # iso-alt C09
+#    A: A̱
+#    E: E̱
+#    I: I̱
+#    O: O̱
+#    U: U̱
+#    a: a̱
+#    e: e̱
+#    i: i̱
+#    o: o̱
+#    u: u̱
+
+
+#  " ̈":
+#    " ": " ̈" # iso-alt-shift D07
+#    A: Ā̱̀
+#    E: Ḕ̱
+#    I: Ī̱̀
+#    O: Ṑ̱
+#    U: Ū̱̀
+#    a: ā̱̀
+#    e: ḕ̱
+#    i: ī̱̀
+#    o: ṑ̱
+#    u: ū̱̀
+
+
+#  " ́":
+#    " ": " ́" # iso-alt-shift D03
+#    A: Á̱ 
+#    E: É̱ 
+#    I: Í̱ 
+#    O: Ó̱ 
+#    U: Ú̱ 
+#    a: á̱ 
+#    e: é̱ 
+#    i: í̱ 
+#    o: ó̱ 
+#    u: ú̱ 
+#
+#  \u{300}:
+#    " ": "`" # iso-alt-shift E00
+#    A: À̱ 
+#    E: È̱ 
+#    I: Ì̱ 
+#    O: Ò̱ 
+#    U: Ù̱ 
+#    a: à̱ 
+#    e: è̱ 
+#    i: ì̱ 
+#    o: ò̱ 
+#    u: ù̱ 
+#
+#
+#  " ̂":
+#    " ": " ̂" # iso-alt-shift E06
+#    A: Â̱
+#    E: Ê̱
+#    I: Î̱
+#    O: Ô̱
+#    U: Û̱
+#    a: â̱
+#    e: ê̱
+#    i: î̱
+#    o: ô̱
+#    u: û̱
+#  
+#  " ̋":
+#    " ": " ̋" # iso-alt-shift C07
+#    A: Ā̱́
+#    E: Ḗ̱
+#    I: Ī̱́
+#    O: Ṓ̱
+#    U: Ū̱́
+#    a: ā̱́
+#    e: ḗ̱
+#    i: ī̱́
+#    o: ṓ̱
+#    u: ū̱́
 
 
 
@@ -246,3 +260,14 @@ special:
     iso-alt+shift: \u{A0}
     iso-caps+alt: \u{A0}
     osx-cmd+alt: \u{A0}
+    
+    
+# Notes, to be deleted
+    
+    #deadKeys:
+#  iso-alt: ['´', '`', '^', '˝', '¨', '-']
+#  iso-alt+shift: [' ́', '\u{300}', ' ̂', ' ̋', ' ̈' ]
+# iso-alt:       D03, E00, E06, C07, D07, C09
+# iso-alt+shift: D03, E00, E06, C07, D07
+  
+
