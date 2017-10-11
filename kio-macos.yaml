@@ -64,8 +64,26 @@ modes:
 
 # Philosophy behind the deadkey assignment: 
 
-# Five alt deadkeys, for acute, grave, circ, acutemacron, gravmacron
+#          mode key            select key
+# Five     alt       deadkeys: acute, grave, circ, acutemacron, gravmacron
 # The same alt-shift deadkeys for the same letters, with line below
+
+# Younger spelling these 5:
+# acute				   alt + modulo vowels C11
+# acuteunderscore	   alt + modulo vowels shift C11
+# circumflex		   alt + modulo vowels E06
+# circumflexunderscore alt + modulo vowels shift E06
+# underscore		   alt + modulo vowels E11
+# consonants           alt + modulo consonant E11
+
+# old orth also these six:
+# grav
+# gravmacron
+# underlined grav
+# underlined gravmacron
+# underlined acute
+# underlined acutemacron
+
 
 # A Á À Â ok: 
 #   
@@ -100,7 +118,7 @@ deadKeys:
 # underline = l ) line under
 
 
-  
+# acute  
 transforms:
   "´":
     " ": "´" # iso-alt D03
