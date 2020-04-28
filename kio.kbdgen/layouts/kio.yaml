@@ -1,0 +1,150 @@
+displayNames:
+  kio: Cáuijògà
+  en: Kiowa
+modes:
+  mobile:
+    default: |
+      q w e r t y u i o p
+      a s d f g h j k l
+      z x c v b n m w
+    shift: |
+      Q W E R T Y U I O P
+      A S D F G H J K L 
+      Z X C V B N M W
+  mac:
+    default: |
+      § 1 2 3 4 5 6 7 8 9 0 - =
+        q w e r t y u i o p [ ]
+        a s d f g h j k l ; ' \
+      ` z x c v b n m , . /
+    shift: |
+      ± ! @ # $ % ^ & * ( ) _ +
+        Q W E R T Y U I O P { }
+        A S D F G H J K L : " |
+      ~ Z X C V B N M < > ?
+    caps: |
+      § 1 2 3 4 5 6 7 8 9 0 - =
+        Q W E R T Y U I O P [ ]
+        A S D F G H J K L ; ' \
+      ` Z X C V B N M , . /
+    alt: |
+      ± ¡ ™ £ ¢ § ^ ¶ • ª º – ≠
+        œ ˙ ´ ® þ ¥ ¨ ʼ ø , “ ‘
+        ¯ ß đ ƒ ǥ ː ˝ ˚ - … æ «
+      ~ ˀ . ¸ ˇ ƀ ˜ ˛ ≤ ≥ ÷
+    alt+shift: |
+      \u{300}  ⁄       €             ‹       ›             †          ̂             ‡       °       ·       ‚       — ±
+               Œ       \u{307}        ́       ‰             Þ         \u{A0}\u{30F} \u{308} \u{31B} Ø       \u{326} ” ’
+               \u{304} \u{A0}\u{311} Ð       \u{A0}\u{330} Ǥ          ̋              ̈       \u{30A} \u{335} №       Æ »
+      ±        \u{309} \u{323}       \u{327} \u{30C}       Ƀ \u{303} \u{328}       „       ʔ       ¿
+    caps+alt: |
+      § ¡ ™  £ ¢ § ˆ ¶ • ª º – ≠
+        Œ ˙  ´ ® Þ ¥ ¨ ʼ Ø , “ ‘
+        ¯ SS Ð ƒ © ˍ ˝ ˚ - … Æ «
+      ` ˀ .  ¸ ˇ ˘ ˜ ˛ ≤ ≥ ÷
+    ctrl: |
+      § 1      2      3     4      5      6      7      8 9 0 \u{1F} =
+        \u{11} \u{17} \u{5} \u{12} \u{14} \u{19} \u{15} \u{9} \u{F} \u{10} \u{1B} \u{1D}
+        \u{1}  \u{13} \u{4} \u{6}  \u{7}  \u{8}  \u{A}  \u{B} \u{C} ; ' \u{1C}
+      0 \u{1A} \u{18} \u{3} \u{16} \u{2}  \u{E}  \u{D}  ,     .     /
+    cmd+alt: |
+      § ¡ ™ £ ¢ § ˆ ¶ • ª º – ≠
+      œ ˙ ´ ® þ ¥ ¨ ’ ø , “ ‘
+      ¯ ß ð ƒ © ˍ ˝ ˚ - … æ «
+      ` ’ . ¸ ˇ ˘ ˜ ˛ ≤ ≥ ÷
+transforms:
+  ´:
+    ' ': ´
+    A: Á
+    E: É
+    I: Í
+    O: Ó
+    U: Ú
+    a: á
+    e: é
+    i: í
+    o: ó
+    u: ú
+  '`':
+    ' ': '`'
+    A: À
+    E: È
+    I: Ì
+    O: Ò
+    U: Ù
+    a: à
+    e: è
+    i: ì
+    o: ò
+    u: ù
+  ^:
+    ' ': ^
+    A: Â
+    E: Ê
+    I: Î
+    O: Ô
+    U: Û
+    a: â
+    e: ê
+    i: î
+    o: ô
+    u: û
+  ®:
+    ' ': ®
+    A: Ā́
+    E: Ḗ
+    I: Ī́
+    O: Ṓ
+    U: Ū́
+    a: ā́
+    e: ḗ
+    i: ī́
+    o: ṓ
+    u: ū́
+  ø:
+    ' ': ø
+    A: Ā̀
+    E: Ḕ
+    I: Ī̀
+    O: Ṑ
+    U: Ū̀
+    a: ā̀
+    e: ḕ
+    i: ī̀
+    o: ṑ
+    u: ū̀
+longpress:
+  A: Á Á̱ A̱ Â Â̱ À À̱ Ā́ Ā̱́ Ā̀ Ā̱̀
+  B: Ƀ
+  D: Ð
+  E: É É̱ E̱ Ê Ê̱ È È̱ Ḗ Ḗ̱ Ḕ Ḕ̱
+  G: Ǥ
+  I: Í Í̱ I̱ Î Î̱ Ì Ì̱ Ī́ Ī̱́ Ī̀ Ī̱̀
+  O: Ó Ó̱ O̱ Ô Ô̱ Ò Ò̱ Ṓ Ṓ̱ Ṑ Ṑ̱
+  U: Ú Ú̱ U̱ Û Û̱ Ù Ù̱ Ū́ Ū̱́ Ū̀ Ū̱̀
+  a: á á̱ a̱ â â̱ à à̱ ā́ ā̱́ ā̀ ā̱̀
+  b: ƀ
+  d: đ
+  e: é é̱ e̱ ê ê̱ è è̱ ḗ ḗ̱ ḕ ḕ̱
+  g: ǥ
+  h: ː ' -
+  i: í í̱ i̱ î î̱ ì ì̱ ī́ ī̱́ ī̀ ī̱̀
+  o: ó ó̱ o̱ ô ô̱ ò ò̱ ṓ ṓ̱ ṑ ṑ̱
+  u: ú ú̱ u̱ û û̱ ù ù̱ ū́ ū̱́ ū̀ ū̱̀
+strings:
+  space: space
+  return: return
+space:
+  mac:
+    alt: '\u{A0}'
+    alt+shift: '\u{A0}'
+    caps+alt: '\u{A0}'
+    cmd+alt: '\u{A0}'
+deadKeys:
+  mac:
+    alt: [´, '`', ^, ®, ø]
+targets:
+  ios:
+    legacyName: kio_keyboards
+  android:
+    legacyName: kio_keyboards
