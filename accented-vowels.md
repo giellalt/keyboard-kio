@@ -11,7 +11,7 @@ All possible diacritics, exemplified with the letter `a`:
 ----
  à̱  á̱  â̱ 
 
- ā̱́  ā̱̀ 
+ ā̱̀  ā̱́
  
 ```
  
