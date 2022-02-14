@@ -7,4 +7,4 @@
 
 # Other information
 
-Add text and links as necessary.
+- [Overview of possible vowel diacritics](accented-vowels.md)
