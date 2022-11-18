@@ -1,6 +1,7 @@
 displayNames:
   kio: Cáuijògà
   en: Kiowa
+
 macOS:
   primary:
     layers:
@@ -51,6 +52,7 @@ macOS:
     alt+caps: \u{A0}
   deadKeys:
     alt: ['´', '`', '^', '®', 'ø']
+
 transforms:
   ´:
     ' ': ´
@@ -112,6 +114,7 @@ transforms:
     i: ī̀
     o: ṑ
     u: ū̀
+
 longpress:
   A: Á Á̱ A̱ Â Â̱ À À̱ Ā́ Ā̱́ Ā̀ Ā̱̀
   B: Ƀ
@@ -130,6 +133,7 @@ longpress:
   i: í í̱ i̱ î î̱ ì ì̱ ī́ ī̱́ ī̀ ī̱̀
   o: ó ó̱ o̱ ô ô̱ ò ò̱ ṓ ṓ̱ ṑ ṑ̱
   u: ú ú̱ u̱ û û̱ ù ù̱ ū́ ū̱́ ū̀ ū̱̀
+
 keyNames:
   space: space
   return: return
