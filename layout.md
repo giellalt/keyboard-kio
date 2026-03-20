@@ -1,13 +1,25 @@
-# Keyboard layout(s) for Kiowa
+---
+layout: default
+---
 
-**Legend:**
+# Keyboard layouts for Kiowa / Cáuijògà
 
-| Mode       | Default | AltGr/Option | Caps Lock (Mode Switch) | Caps Lock + AltGr/Option |
-| ----------:|:-------:|:------------:|:-----------------------:|:------------------------:|
-|**Standard**| black   | red          | blue                    | purple                   |
-|**Deadkey** | green   | orange       | pink                    | green                    |
+> Tip: These keyboards are interactive — click or tap keys to explore different layers (Shift, Alt, etc.)
 
+## Mac
 
-# Cáuijògà
+<iframe src="https://keyboard.giellalt.org/embed?kbd=kio&layout=kio&platform=macOS&variant=primary"></iframe>
 
-![kio.svg](kio.svg)
+## Windows
+
+<iframe src="https://keyboard.giellalt.org/embed?kbd=kio&layout=kio&platform=windows&variant=primary"></iframe>
+
+## Android
+
+### Phone
+
+<iframe src="https://keyboard.giellalt.org/embed?kbd=kio&layout=kio&platform=android&variant=primary"></iframe>
+
+### Tablet
+
+<iframe src="https://keyboard.giellalt.org/embed?kbd=kio&layout=kio&platform=android&variant=tablet-600"></iframe>
