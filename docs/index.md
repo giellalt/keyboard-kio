@@ -1,10 +1,9 @@
 # Documentation for the Kiowa keyboards
 
+## Layouts
 
-# Layouts
+- [Layout overview](layout.md)
 
--   [Layout overview](layout.html)
-
-# Other information
+## Other information
 
 - [Overview of possible vowel diacritics](accented-vowels.md)
